@@ -1,0 +1,121 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "Define.h"
+#include <WinRes.h>
+
+#ifndef APSTUDIO_INVOKED
+#define AFX_RESOURCE_DLL
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "Resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""Define.h""\r\n"
+    "#include <WinRes.h>\r\n"
+    "\r\n"
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#define AFX_RESOURCE_DLL\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""Resource\\\\VER.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_Main                ICON                    "Resource\\Main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IDR_Help                RCDATA                  "Resource\\Help.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_Help DIALOGEX 0, 0, 411, 287
+STYLE DS_SETFONT | DS_MODALFRAME | DS_NOIDLEMSG | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "XCMD"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDI_Main,IDC_STATIC,7,11,20,20
+    LTEXT           "XCMD - XPE Commander",IDC_STATIC,38,12,191,12
+    LTEXT           "版权所无(L) 2006-2007 Yonsm.NET ，保留所有权利",IDC_STATIC,38,28,191,12
+    RTEXT           "版本: %s",IDC_Version,238,12,166,12
+    RTEXT           "构建: %s",IDC_Build,238,28,166,12
+    EDITTEXT        IDC_Help,0,47,411,240,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CmdErr              "执行错误："
+    IDS_FoundDevice         "\r\n找到设备：%s"
+    IDS_FoundDriver         "\r\n找到驱动：%s，INF 文件：%s"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "Resource\\VER.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
